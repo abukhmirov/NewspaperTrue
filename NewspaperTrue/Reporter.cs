@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace NewspaperTrue
 {
-    internal class Reporter
+    public class Reporter
     {
+        public string Name { get; set; }
+        public string Speciality { get; set; }
+        public List<Article> Articles { get; set; }
+
+        public Reporter(string name, string speciality)
+        {
+            Name = name;
+            Speciality = speciality;
+            Articles = new List<Article>();
+        }
     }
 }
