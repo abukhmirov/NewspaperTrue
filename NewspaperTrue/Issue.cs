@@ -12,9 +12,9 @@ namespace NewspaperTrue
         public DateTime PublicationDate { get; set; }
         public List<Article> Articles { get; set; }
 
-        public Issue(DateTime date)
+        public Issue()
         {
-            PublicationDate = date;
+            
             Articles = new List<Article>();
         }
 

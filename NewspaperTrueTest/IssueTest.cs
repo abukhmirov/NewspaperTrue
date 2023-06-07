@@ -11,7 +11,7 @@ namespace NewspaperTrueTest
     {
         public void Issue_Constructor_AllPropertiesAddedCorrectly()
         {
-            Issue issue = new Issue(DateTime.Now);
+            Issue issue = new Issue();
             Assert.IsType<DateTime>(issue.PublicationDate);
         }
     }
